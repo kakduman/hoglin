@@ -16,7 +16,7 @@ export default function Home({ news, error }: { news: NewsItem[]; error: string 
       {error ? (
         <p className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800">{error}</p>
       ) : news.length === 0 ? (
-        <p className="text-sm">Loading the news…</p>
+        <></>
       ) : (
         <div className="flex flex-col">
           <div className="mx-auto text-center border-b border-neutral-200 p-2 w-full bg-neutral-100 sm:bg-inherit">
